@@ -28,7 +28,7 @@ class Course {
         path.join(__dirname, '..', 'data', 'courses.json'),
         JSON.stringify(courses),
         (err) => {
-          if(err) {
+          if (err) {
             reject(err)
           } else {
             resolve()
@@ -52,6 +52,11 @@ class Course {
         }
       )
     })
+  }
+
+  static async getById(id) {
+    const courses = await Course.getAll()
+    return courses.find(c => c.id === id)
   }
 }
 
