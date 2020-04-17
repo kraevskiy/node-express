@@ -1,1 +1,22 @@
 <h1>add</h1>
+
+<form action="/add" method="POST">
+	<div class="input-field">
+		<input id="title" name="title" type="text" class="validate" required>
+		<label for="title">Name course</label>
+		<span class="helper-text" data-error="Add name course"></span>
+	</div>
+	<div class="input-field">
+		<input id="price" name="price" type="number" class="validate" required min="1">
+		<label for="price">Price</label>
+		<span class="helper-text" data-error="Add price course"></span>
+	</div>
+	<div class="input-field">
+		<input id="img" name="urlimage" type="text" class="validate" required>
+		<label for="img">Img url</label>
+		<span class="helper-text" data-error="Add url img"></span>
+	</div>
+	<button class="btn waves-effect waves-light" type="submit" >Add course
+		<i class="material-icons right">send</i>
+	</button>
+</form>
