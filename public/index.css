@@ -25,3 +25,9 @@
 .course .price {
 	font-size: 2rem;
 }
+
+.card-action.actions{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}

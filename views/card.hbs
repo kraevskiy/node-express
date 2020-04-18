@@ -1,0 +1,28 @@
+<h1>Card</h1>
+
+{{#if courses.length }}
+	<table>
+		<thead>
+		<tr>
+			<th>Name course</th>
+			<th>Count</th>
+			<th>Deysvie</th>
+		</tr>
+		</thead>
+		<tbody>
+		{{#each courses}}
+			<tr>
+				<td>{{title}}</td>
+				<td>{{count}}</td>
+				<td>
+					<button class="btn waves-effect waves-light red">Delete<i class="material-icons right">remove_shopping_cart</i></button>
+				</td>
+			</tr>
+		{{/each}}
+		</tbody>
+	</table>
+
+	<p><strong>Price:</strong> <span class="price">{{price}}</span></p>
+{{else}}
+ <h5>Not courses</h5>
+{{/if}}

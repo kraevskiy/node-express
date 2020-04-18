@@ -1,6 +1,6 @@
 <nav>
 	<div class="nav-wrapper">
-		<a href="#" class="brand-logo">Courses App</a>
+		<a href="/" class="brand-logo">Courses App</a>
 		<ul id="nav-mobile" class="right hide-on-med-and-down">
 			{{#if isHome}}
 				<li class="active"><a href="/">Home page</a></li>
@@ -18,6 +18,12 @@
 				<li class="active"><a href="/add">Add course</a></li>
 			{{else}}
 				<li><a href="/add">Add course</a></li>
+			{{/if}}
+
+			{{#if isCard}}
+				<li class="active"><a href="/card">Card</a></li>
+			{{else}}
+				<li><a href="/card">Card</a></li>
 			{{/if}}
 		</ul>
 	</div>
