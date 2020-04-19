@@ -2,33 +2,35 @@
 
 
 {{#if courses.length }}
-	<div class="row">
+  <div class="row">
 
-		{{#each courses}}
-			<div class="col s6">
-				<div class="card">
-					<div class="card-image">
-						<img src="{{img}}" alt="{{title}}">
-					</div>
-					<div class="card-content">
-						<span class="card-title">{{title}}</span>
-						<p class="price">{{price}}</p>
-					</div>
-					<div class="card-action actions">
-						<a href="/courses/{{id}}" target="_blank">Open course</a>
-						<a href="/courses/{{id}}/edit?allow=true" >Edit</a>
-						<form action="/card/add" method="POST">
-							<input type="hidden" name="id" value="{{id}}">
-							<button class="btn waves-effect waves-light" type="submit" >Add card
-								<i class="material-icons right">add_shopping_cart</i>
-							</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		{{/each}}
-	</div>
+    {{#each courses}}
+      <div class="col s6">
+        <div class="card">
+          <div class="card-image">
+            <img src="{{img}}" alt="{{title}}">
+          </div>
+          <div class="card-content">
+            <span class="card-title">{{title}}</span>
+            <p class="price">{{price}}</p>
+          </div>
+          <div class="card-action actions">
+            <a href="/courses/{{id}}" target="_blank">Open course</a>
+            {{#if @root.isAuth}}
+              <a href="/courses/{{id}}/edit?allow=true">Edit</a>
+              <form action="/card/add" method="POST">
+                <input type="hidden" name="id" value="{{id}}">
+                <button class="btn waves-effect waves-light" type="submit">Add card
+                  <i class="material-icons right">add_shopping_cart</i>
+                </button>
+              </form>
+            {{/if}}
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
 
 {{else}}
-	<p>Not courses</p>
+  <p>Not courses</p>
 {{/if}}
