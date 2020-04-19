@@ -24,6 +24,11 @@
     </table>
 
     <p><strong>Price:</strong> <span class="price">{{price}}</span></p>
+
+    <form action="/orders" method="POST" style="padding: 20px;">
+      <button class="btn waves-effect waves-light green pulse" data-id="{{id}}">Buy now<i
+          class="material-icons right">payment</i></button>
+    </form>
   {{else}}
     <h5>Not courses</h5>
   {{/if}}

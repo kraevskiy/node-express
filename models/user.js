@@ -18,7 +18,7 @@ const userSchema = new Schema({
           default: 1
         },
         courseId: {
-          type: Schema.Types.ObjectID,
+          type: Schema.Types.ObjectId,
           ref: 'Course',
           required: true
         }
@@ -55,6 +55,11 @@ userSchema.methods.removeFromCart = function (id) {
   }
 
   this.cart = {items}
+  return this.save()
+}
+
+userSchema.methods.clearCart = function (){
+  this.cart = {items: []}
   return this.save()
 }
 
