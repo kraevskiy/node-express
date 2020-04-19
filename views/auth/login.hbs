@@ -28,12 +28,12 @@
       <h1>Registration</h1>
       <form action="/auth/register" method="POST">
         <div class="input-field">
-          <input id="remail" name="remail" type="email" class="validate" required>
+          <input id="remail" name="email" type="email" class="validate" required>
           <label for="remail">Email</label>
           <span class="helper-text" data-error="Enter valid email"></span>
         </div>
         <div class="input-field">
-          <input id="rpassword" name="rpassword" type="password" class="validate" required>
+          <input id="rpassword" name="password" type="password" class="validate" required>
           <label for="rpassword">Password</label>
           <span class="helper-text" data-error="Enter correct password"></span>
         </div>
@@ -41,6 +41,11 @@
           <input id="confirm" name="confirm" type="password" class="validate" required>
           <label for="confirm">Reenter password</label>
           <span class="helper-text" data-error="Enter correct password"></span>
+        </div>
+        <div class="input-field">
+          <input id="name" name="name" type="text" class="validate" required>
+          <label for="name">Your name</label>
+          <span class="helper-text" data-error="Enter correct name"></span>
         </div>
         <button class="btn waves-effect green waves-light" type="submit">Register
           <i class="material-icons right">person_pin</i>
