@@ -19,6 +19,7 @@
           <label for="password">Password</label>
           <span class="helper-text" data-error="Enter correct password"></span>
         </div>
+        <input type="hidden" name="_csrf" value="{{csrf}}">
         <button class="btn waves-effect green waves-light" type="submit">Sign In
           <i class="material-icons right">person_pin</i>
         </button>
@@ -47,6 +48,7 @@
           <label for="name">Your name</label>
           <span class="helper-text" data-error="Enter correct name"></span>
         </div>
+        <input type="hidden" name="_csrf" value="{{csrf}}">
         <button class="btn waves-effect green waves-light" type="submit">Register
           <i class="material-icons right">person_pin</i>
         </button>

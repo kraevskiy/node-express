@@ -17,12 +17,14 @@
 		<span class="helper-text" data-error="Add url img"></span>
 	</div>
 	<input type="hidden" name="id" value="{{course.id}}">
+  <input type="hidden" name="_csrf" value="{{csrf}}">
 	<button class="btn waves-effect waves-light" type="submit" >Edit course
 		<i class="material-icons right">border_color</i>
 	</button>
 </form>
 <form action="/courses/remove" class="m" method="POST">
   <input type="hidden" name="id" value="{{course.id}}">
+  <input type="hidden" name="_csrf" value="{{csrf}}">
   <button class="btn waves-effect waves-light red" type="submit" >Remove course
     <i class="material-icons right">remove_from_queue</i>
   </button>
