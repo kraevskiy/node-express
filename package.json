@@ -20,6 +20,7 @@
   "homepage": "https://github.com/kraevskiy/node-express#readme",
   "dependencies": {
     "@handlebars/allow-prototype-access": "^1.0.3",
+    "bcryptjs": "^2.4.3",
     "connect-mongodb-session": "^2.3.1",
     "express": "^4.17.1",
     "express-handlebars": "^4.0.3",
