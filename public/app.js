@@ -30,7 +30,6 @@ if ($card) {
     if (event.target.closest('.js-remove')) {
       const id = event.target.closest('.js-remove').dataset.id
       const csrf = event.target.closest('.js-remove').dataset.csrf
-      console.log(csrf);
 
       fetch(`/card/remove/${id}`, {
         method: 'delete',
@@ -62,4 +61,4 @@ if ($card) {
   })
 }
 
-M.Tabs.init(document.querySelectorAll('.tabs'));
+M.Tabs.init(document.querySelectorAll('.tabs'))

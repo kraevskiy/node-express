@@ -22,9 +22,8 @@ router.post('/', auth, async (req, res) => {
     await course.save()
     res.redirect('/courses')
   } catch (e) {
-    console.log(e);
+    console.log(e)
   }
-
 })
 
 module.exports = router

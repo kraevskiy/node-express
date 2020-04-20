@@ -56,9 +56,8 @@ router.post('/login', async (req, res) => {
       res.redirect('/auth/login#login')
     }
   } catch (e) {
-    console.log(e);
+    console.log(e)
   }
-
 })
 
 router.post('/register', async (req, res) => {
@@ -78,7 +77,7 @@ router.post('/register', async (req, res) => {
       await sgMail.send(regEmail(email))
     }
   } catch (e) {
-    console.log(e);
+    console.log(e)
   }
 })
 
@@ -109,7 +108,7 @@ router.get('/password/:token', async (req, res) => {
       })
     }
   } catch (e) {
-    console.log(e);
+    console.log(e)
   }
 })
 
@@ -136,7 +135,7 @@ router.post('/reset', (req, res) => {
       }
     })
   } catch (e) {
-    console.log(e);
+    console.log(e)
   }
 })
 
@@ -159,7 +158,7 @@ router.post('/password', async (req, res) => {
       res.redirect('/auth/login')
     }
   } catch (e) {
-    console.log(e);
+    console.log(e)
   }
 })
 

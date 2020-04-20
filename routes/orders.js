@@ -20,7 +20,7 @@ router.get('/', auth, async (req, res) => {
       })
     })
   } catch (e) {
-    console.log(e);
+    console.log(e)
   }
 })
 
@@ -47,7 +47,7 @@ router.post('/', auth, async (req, res) => {
     await req.user.clearCart()
     res.redirect('/orders')
   } catch (e) {
-    console.log(e);
+    console.log(e)
   }
 })
 
