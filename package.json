@@ -20,6 +20,7 @@
   "homepage": "https://github.com/kraevskiy/node-express#readme",
   "dependencies": {
     "@handlebars/allow-prototype-access": "^1.0.3",
+    "@sendgrid/mail": "^7.0.1",
     "bcryptjs": "^2.4.3",
     "connect-flash": "^0.1.1",
     "connect-mongodb-session": "^2.3.1",
@@ -29,6 +30,8 @@
     "express-session": "^1.17.1",
     "handlebars": "^4.7.6",
     "mongoose": "^5.9.9",
+    "nodemailer": "^6.4.6",
+    "nodemailer-sendgrid-transport": "^0.2.0",
     "uuid": "^7.0.3"
   },
   "devDependencies": {
