@@ -77,7 +77,7 @@ async function start() {
       useFindAndModify: false
     })
 
-    app.listen(3000, () => {
+    app.listen(PORT, () => {
       console.log(`Server is running on post ${PORT}`);
     })
   } catch (e) {
