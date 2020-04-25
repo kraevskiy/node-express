@@ -67,7 +67,7 @@ app.use('/profile', profileRoutes)
 
 app.use(errorHandler)
 
-const PORT = process.env.POST || 3000
+const PORT = process.env.PORT || 3000
 
 async function start() {
   try {
